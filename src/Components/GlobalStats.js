@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import {Typography,Tooltip,Fade,Zoom} from '@material-ui/core';
+
+
+import CountUp from 'react-countup';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,18 +16,29 @@ const useStyles = makeStyles((theme) => ({
     
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color:'red',
+    backgroundColor: "#00334d",
+    // position: 'relative',
+   
+    // backgroundColor: fade(theme.palette.common.white, 0.15),
+    '&:hover': {
+      transform: 'scale(1.1)',}
+    //   backgroundColor: fade(theme.palette.common.white, 0.25),
+    // color: theme.palette.text.secondary,
   },
+ 
   title:{
-    color:'#3f51b5',
+    color:'white',
     textTransform:"uppercase"
   }
 }));
 
 export default function GlobalStats() {
   const [globalData, setGlobalData] = useState({});
+  
+   
   // console.log(currentScreen)
 
   useEffect(() => {
@@ -47,16 +62,23 @@ export default function GlobalStats() {
         {Object.keys(globalData).map((key ,ind )=> {
 
           return (
-            <Grid item xs={12} sm={4} key={ind}>
+        
+            <Tooltip title="Global Data" TransitionComponent={Zoom} >
+           <Grid item xs={12} sm={4} key={ind}>
               <Paper className={classes.paper} 
-              elevation={3}>
+              elevation={4}>
                <h3 className={classes.title}>
                  {key.replace(/_/g,' ')}
                  </h3>
-               <h3>{globalData[key]}</h3>
+                 <Typography variant="h6">
+              <CountUp start={0} end={globalData[key]} duration={2.75} separator="," />
+            </Typography>
+               {/* <h3>{globalData[key]}</h3> */}
               </Paper>
 
             </Grid>
+            </Tooltip>
+          
           )
         })}
 

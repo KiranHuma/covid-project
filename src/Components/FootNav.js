@@ -4,15 +4,17 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import MultilineChart from '@material-ui/icons/MultilineChart';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
+import LocationSearchingIcon from '@material-ui/icons/LocationSearching';
 import HomeIcon from '@material-ui/icons/Home';
 import GlbalIcon from '@material-ui/icons/Language';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import GridOnIcon from '@material-ui/icons/GridOn';
+import BarChartIcon from '@material-ui/icons/BarChart';
 
 const useStyles = makeStyles({
   root: {
    position:'relative',
-   bottom:"-300px",
+   bottom:"-150px",
    top:"100"
  
   },
@@ -35,9 +37,9 @@ export default function  FootNav({screenConfig}) {
     >
       <BottomNavigationAction label="Global Stats" icon={<HomeIcon />} />
       <BottomNavigationAction label="Global" icon={<GlbalIcon />} />
-     <BottomNavigationAction label="Country Tab" icon={<LocationOnIcon />} />
-     <BottomNavigationAction label="Country Stat " icon={<MultilineChart />} />
-      <BottomNavigationAction label="Graphs By id" icon={<RestoreIcon />} />
+     <BottomNavigationAction label="Tabular Stat" icon={<GridOnIcon />} />
+     <BottomNavigationAction label="Country Stat " icon={<BarChartIcon />} />
+      <BottomNavigationAction label="Location Stat" icon={<LocationSearchingIcon />} />
       <BottomNavigationAction label="Pakistan Stat" icon={<LocationOnIcon />} />
       {/* <BottomNavigationAction label="Pakistan" icon={<LocationOnIcon />} /> */}
     </BottomNavigation>

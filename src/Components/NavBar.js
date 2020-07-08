@@ -43,6 +43,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  navbr: {
+    // backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+    backgroundColor: "#00334d"
+
+  },
   inputRoot: {
     color: 'inherit',
   },
@@ -67,13 +73,13 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.navbr}  position="static" >
         <Toolbar>
          
           <Typography className={classes.title} variant="h6" noWrap>
             Covid-19 Tracker
           </Typography>
-          <div className={classes.search}>
+          {/* <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -85,7 +91,7 @@ export default function NavBar() {
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
     </div>

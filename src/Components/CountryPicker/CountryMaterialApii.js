@@ -36,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:'green',
 
   },
+  headerr: {
+    // backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+    backgroundColor: "#00334d"
+
+  },
 }));
 
 export default function AllCountries() {
@@ -62,16 +68,16 @@ export default function AllCountries() {
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="Covid table">
         <TableHead className={classes.head}>
-          <TableRow>
-            <TableCell align="left">Country</TableCell>
-            <TableCell align="left">Total Cases</TableCell>
-            <TableCell align="left">Total Recoverd</TableCell>
-            <TableCell align="left">Total UnResolved</TableCell>
-            <TableCell align="left">Total Deaths</TableCell>
-            <TableCell align="left">New Cases Today</TableCell>
-            <TableCell align="left">New Deaths Today</TableCell>
-            <TableCell align="left">Active Cases</TableCell>
-            <TableCell align="left">Serious Cases</TableCell>
+          <TableRow className={classes.headerr}>
+            <TableCell className={classes.headerr} align="left">Country</TableCell>
+            <TableCell className={classes.headerr} align="left">Total Cases</TableCell>
+            <TableCell className={classes.headerr} align="left">Total Recoverd</TableCell>
+            <TableCell className={classes.headerr} align="left">Total UnResolved</TableCell>
+            <TableCell className={classes.headerr} align="left">Total Deaths</TableCell>
+            <TableCell  className={classes.headerr} align="left">New Cases Today</TableCell>
+            <TableCell className={classes.headerr} align="left">New Deaths Today</TableCell>
+            <TableCell  className={classes.headerr} align="left">Active Cases</TableCell>
+            <TableCell className={classes.headerr} align="left">Serious Cases</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
