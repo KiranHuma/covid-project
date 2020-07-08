@@ -35,9 +35,9 @@ export default function  FootNav({screenConfig}) {
     >
       <BottomNavigationAction label="Global Stats" icon={<HomeIcon />} />
       <BottomNavigationAction label="Global" icon={<GlbalIcon />} />
-     <BottomNavigationAction label="Country Stats" icon={<LocationOnIcon />} />
-     <BottomNavigationAction label="Graphs By Country" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Graphs" icon={<MultilineChart />} />
+     <BottomNavigationAction label="Country Tab" icon={<LocationOnIcon />} />
+     <BottomNavigationAction label="Country Stat " icon={<MultilineChart />} />
+      <BottomNavigationAction label="Graphs By id" icon={<RestoreIcon />} />
       {/* <BottomNavigationAction label="Graphs" icon={<LocationOnIcon />} /> */}
     </BottomNavigation>
   );
