@@ -5,6 +5,8 @@ import Chart from './Chart/Chart'
 import CountryPicker from './CountryPicker/Country'
 import MaterialApii from './CountryPicker/CountryMaterialApii'
 import ChartCountrywise from './Chart/ChartCountrywise'
+import CountryPickerr from './CountryPicker/CountryPickerr'
+
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
 // import Grid from '@material-ui/core/Grid';
@@ -40,6 +42,10 @@ else if(currentScreen ===3)
 return<CountryPicker/>
  else if(currentScreen ===4)
 return<ChartCountrywise/>
+else if(currentScreen ===5)
+return<CountryPickerr/>
+// else if(currentScreen ===6)
+// return<AllCountries/>
 
   else return <GlobalStats/>
 }

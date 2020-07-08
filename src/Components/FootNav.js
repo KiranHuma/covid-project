@@ -11,10 +11,10 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const useStyles = makeStyles({
   root: {
-   position:'absolute',
-   bottom:0,
-   right:0,
-   left:0
+   position:'relative',
+   bottom:"-300px",
+   top:"100"
+ 
   },
 });
 
@@ -38,7 +38,8 @@ export default function  FootNav({screenConfig}) {
      <BottomNavigationAction label="Country Tab" icon={<LocationOnIcon />} />
      <BottomNavigationAction label="Country Stat " icon={<MultilineChart />} />
       <BottomNavigationAction label="Graphs By id" icon={<RestoreIcon />} />
-      {/* <BottomNavigationAction label="Graphs" icon={<LocationOnIcon />} /> */}
+      <BottomNavigationAction label="Pakistan Stat" icon={<LocationOnIcon />} />
+      {/* <BottomNavigationAction label="Pakistan" icon={<LocationOnIcon />} /> */}
     </BottomNavigation>
   );
 }

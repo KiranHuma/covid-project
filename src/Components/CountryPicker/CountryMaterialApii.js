@@ -9,6 +9,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     // flexGrow: 1,
@@ -55,6 +57,8 @@ export default function AllCountries() {
   const classes = useStyles();
 
   return (
+  
+    <Paper className={classes.root}>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="Covid table">
         <TableHead className={classes.head}>
@@ -118,8 +122,12 @@ export default function AllCountries() {
             )
           })}
         </TableBody>
+       
       </Table>
+      
     </TableContainer>
+     
+    </Paper>
 
   );
 }
