@@ -5,8 +5,8 @@ import { Line } from "react-chartjs-2";
 const useStyles = makeStyles((theme) => ({
   mainChart: {
     maxWidth: "1000px",
-    marginTop:"20px auto",
-    margin: "170px auto",
+    // marginTop:"10px auto",
+    margin: "80px auto",
    
   },
 }));

@@ -5,7 +5,7 @@ import { Line } from "react-chartjs-2";
 const useStyles = makeStyles((theme) => ({
   mainChart: {
     maxWidth: "1000px",
-    margin: "20px auto",
+    margin: "0px auto",
   },
 }));
 
@@ -75,7 +75,7 @@ const Chart = () => {
   return <div className={classes.mainChart}>{LineChart} <h6>New Daily Cases</h6>
   <br/>
   <br/>
-  <br/>
+  
  <h1 >Pakistan Stats</h1> </div>
 
 

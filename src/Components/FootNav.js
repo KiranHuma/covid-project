@@ -14,9 +14,9 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 const useStyles = makeStyles({
   root: {
    position:'relative',
-   bottom:"-150px",
-   top:"100"
- 
+   bottom:"-130px",
+   margin: '0 auto',
+   flexWrap:'wrap'
   },
 });
 

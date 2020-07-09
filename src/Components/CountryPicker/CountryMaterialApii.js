@@ -15,31 +15,39 @@ const useStyles = makeStyles((theme) => ({
   root: {
     // flexGrow: 1,
     maxWidth: 1000,
+    minWidth:650,
     margin: '0 auto',
-    marginTop: 50
+    marginTop: 50,
+    // position:'relative',
+    
+    // flexWrap:'wrap'
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    flexWrap:'wrap'
   },
   title: {
     color: '#3f51b5',
     textTransform: "uppercase"
   }, table: {
     minWidth: 650,
+    flexWrap:'wrap'
   },
   head: {
     // backgroundColor: theme.palette.common.black,
     color: theme.palette.common.green,
     // color: '#3f51b5',
     backgroundColor:'green',
+    flexWrap:'wrap'
 
   },
   headerr: {
     // backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
-    backgroundColor: "#00334d"
+    backgroundColor: "#00334d",
+    flexWrap:'wrap'
 
   },
 }));
@@ -66,7 +74,7 @@ export default function AllCountries() {
   
     <Paper className={classes.root}>
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="Covid table">
+      <Table className={classes.table} flexWrap='wrap' aria-label="Covid table">
         <TableHead className={classes.head}>
           <TableRow className={classes.headerr}>
             <TableCell className={classes.headerr} align="left">Country</TableCell>
