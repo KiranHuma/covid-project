@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import GlobalStats from './GlobalStats'
 import AllCountries from './AllCountries.js'
-import Chart from './Chart/Chart'
+import Chartdaily from './Chart/Chart'
 import CountryPicker from './CountryPicker/Country'
-import MaterialApii from './CountryPicker/CountryMaterialApii'
+import CountryTable from './CountryPicker/CountryTable'
 import ChartCountrywise from './Chart/ChartCountrywise'
-import CountryPickerr from './CountryPicker/CountryPickerr'
+import Pakstat from './CountryPicker/PakStat'
 
 // import { makeStyles } from '@material-ui/core/styles';
 // import Paper from '@material-ui/core/Paper';
@@ -35,15 +35,15 @@ export default function InfoPanel({currentScreen}) {
 if(currentScreen ===0)
 return <GlobalStats/>
 else if(currentScreen ===1)
-return <Chart/>
+return <Chartdaily/>
 else if(currentScreen ===2)
-return <MaterialApii/>
+return <CountryTable/>
 else if(currentScreen ===3)
 return<CountryPicker/>
  else if(currentScreen ===4)
 return<ChartCountrywise/>
 else if(currentScreen ===5)
-return<CountryPickerr/>
+return<Pakstat/>
 // else if(currentScreen ===6)
 // return<AllCountries/>
 
